@@ -1,0 +1,46 @@
+CamRadar
+===================
+it will measure distance between cam and face
+and poltted  on room map(Assume 5*5 feets room )
+
+i assume as  Normal Face Width (KNOWN_WIDTH=.5;	)but u can change in coding also.
+
+1st initialize face width needed.then face tracking Kalman Filter it will ( if face is not detect)tracking 100 sec
+
+S/W  Requirement 
+=================
+OpenCV 2.4.9
+	
+
+How to execute the program
+==========================
+
+	Important Note 
+	============================
+	
+	1. Need 1 feet gap between cam and face(1st time only),i hope ur using labtop for initialize face width.
+	 2.program will ask Grid(Feet): you have give one value only example if you will give 4 ,then program will take it as 4*4 room
+							    <<<<<<>>>>>>>>>>>>>>>>>>
+	
+
+execution
+=========	
+g++ camRadar.cpp -o camRadar `pkg-config --cflags --libs opencv`
+./camRadar
+
+
+1st Time Intialiize
+ Please Keep away from camera (exact 1 feet)
+
+Grid(Feet): 4    // ( 4*4 feet)
+            ==
+
+
+
+
+
+
+
+
+
+
